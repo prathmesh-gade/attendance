@@ -13,7 +13,7 @@ const makeCommit = n => {
     if (n === 0) return simpleGit().push();
     const weeks = getRandomInRange(0, 54);
     const days = getRandomInRange(0, 6);
-    const DATE = moment().subtract(2, 'y').add(1, 'd').add(weeks, 'w').add(days, 'd').format();
+    const DATE = moment().subtract(1, 'y').add(1, 'd').add(weeks, 'w').add(days, 'd').format();
     const data = { date: DATE };
     console.log(DATE);
     jsonfile.writeFile(FILE_PATH, data, () => {
