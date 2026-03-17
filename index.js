@@ -22,4 +22,6 @@ const makeCommit = n => {
 }
 // weeks - for weeks goes form 0 - 54
 // days - for days goes form 0 - 6
+
+// test
 makeCommit(1000);
